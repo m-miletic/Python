@@ -5,7 +5,7 @@ Command line arguments:
 By accepting command line arguments, Python scripts become more flexible, reusable, and suitable for automation.
 
 Python provides three main ways to handle command-line arguments:
-1) sys.argv
-2) getopt
-3) argparse
+  1) sys.argv: A simple way to access command-line arguments as a list of strings.
+  2) getopt: A built-in module for parsing command-line options and arguments in a structured way.
+  3) argparse: An advanced and flexible module that provides built-in validation, help messages, and better argument handling.
 
