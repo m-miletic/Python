@@ -12,8 +12,8 @@ Python provides three main ways to handle command-line arguments:
   3) argparse: An advanced and flexible module that provides built-in validation, help messages, and better argument handling.
 
 
-## Usage 
-### sys.argv (The example implementation can be found in `script_1.py`)
+## sys.argv 
+### Check `script_1.py` for implementation example)
 Run script using the following command:
 
 `>> python script_name.py <number1> <number2>`
