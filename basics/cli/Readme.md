@@ -12,11 +12,11 @@ Python provides three main ways to handle command-line arguments:
 
 # Usage
 Run script using the following command:
->> python script_name.py <number1> <number2>
+`>> python script_name.py <number1> <number2>`
 
 - `python` - run Python interpreter
 - `script_name.py` - Python file
 - `<number1>`, `<number2>` - command line arguments
 
 ### example
->> python script.py 3.5 2
+`>> python script.py 3.5 2`
