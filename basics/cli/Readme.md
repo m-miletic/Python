@@ -25,3 +25,7 @@ Run script using the following command:
 ### example
 
 `>> python script.py 3.5 2`
+
+## getopt
+### Check `script_2.py` for implementation example
+#### While sys.argv works for basic argument handling, it lacks structure when handling optional arguments or flags. The getopt module helps by providing a more organized way to parse command-line arguments.
