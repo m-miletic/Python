@@ -13,7 +13,7 @@ Python provides three main ways to handle command-line arguments:
 
 
 ## Usage 
-### sys.argv
+### sys.argv (The example implementation can be found in `script_1.py`)
 Run script using the following command:
 
 `>> python script_name.py <number1> <number2>`
