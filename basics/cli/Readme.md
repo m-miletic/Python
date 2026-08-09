@@ -28,4 +28,8 @@ Run script using the following command:
 
 ## getopt
 ### Check `script_2.py` for implementation example
-#### While sys.argv works for basic argument handling, it lacks structure when handling optional arguments or flags. The getopt module helps by providing a more organized way to parse command-line arguments.
+While sys.argv works for basic argument handling, it lacks structure when handling optional arguments or flags. The getopt module helps by providing a more organized way to parse command-line arguments.
+### Syntax for getopt in Python:
+`>> getopt.getopt(args, short_options, long_options)`
+
+
