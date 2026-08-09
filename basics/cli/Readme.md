@@ -47,7 +47,8 @@ NOTE: How to distinguish option from an argument!?
 
 
 
-### example (as it can be seen in the example below short and long options can be used together in the same command)
+### example  
+As it can be seen in the example below short and long options can be used together in the same command
 
 `>> python script.py -f input.txt --output result.txt`
 
