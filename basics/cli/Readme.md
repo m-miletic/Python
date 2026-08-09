@@ -39,11 +39,10 @@ While sys.argv works for basic argument handling, it lacks structure when handli
 In `short_options` a colon (`:`) indicates that a value is required. It doesn't mean that the option is mandatory but if option is used value needs to be given.
 In `long_options` an equality sign (`=`) has the same functionality.
 
-NOTE:  
-How to distinguish option from an argument!?    
-  option - an option is introduced by `-` for `short_options` or `--` for `long_options`  
-  argument - positional value that isn't attached to an option (for the example below input.txt and result.py are options and there is no arguments).  
-  The script performs the same task whether the value is provided as a positional argument or as an option value. The difference is only in the way the value is passed to the script.  
+NOTE: How to distinguish option from an argument!?    
+    option - an option is introduced by `-` for `short_options` or `--` for `long_options`  
+    argument - positional value that isn't attached to an option (for the example below input.txt and result.py are options and there is no arguments).  
+    The script performs the same task whether the value is provided as a positional argument or as an option value. The difference is only in the way the value is passed to the script.  
 
 
 ### example (as it can be seen in the example below short and long options can be used together in the same command)
