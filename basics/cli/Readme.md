@@ -32,4 +32,13 @@ While sys.argv works for basic argument handling, it lacks structure when handli
 ### Syntax for getopt in Python:
 `>> getopt.getopt(args, short_options, long_options)`
 
+- `args` - List of command-line arguments
+- `short_options` - A string of single-character options
+    in short options a colon (:) indicates that a value is required
+    it doesn't mean that the option is mandatory but if option is used, value needs to be given
+- `long_options` -  List of long-form options
+
+### example
+
+`>> python script.py -f input.txt --output result.txt`
 
