@@ -22,7 +22,7 @@ Run script using the following command:
 - `script_name.py` - Python file
 - `<number1>`, `<number2>` - command line arguments
 
-### example
+### How to Execute the Script
 
 `>> python script.py 3.5 2`
 
@@ -45,7 +45,7 @@ NOTE: How to distinguish option from an argument!?
 - argument - positional value that isn't attached to an option (for the example below input.txt and result.py are options and there is no arguments).
 #### The script performs the same task whether the value is provided as a positional argument or as an option value. The difference is only in the way the value is passed to the script!
 
-### example  
+### How to Execute the Script  
 As it can be seen in the example below short and long options can be used together in the same command
 
 `>> python script.py -f input.txt --output result.txt`
@@ -53,7 +53,7 @@ As it can be seen in the example below short and long options can be used togeth
 ## argparse  
 ### Check `script_3.py` for implementation (and syntax) example  
 The argparse module, simplifies command-line argument handling by offering built-in support for required and optional arguments, flags, automatic help messages, and type validation.  
-### example:  
+### Syntax for argparse:  
 ```
 >> parser = argparse.ArgumentParser(description="Script description here")
 >> parser.add_argument("positional_arg", help="Description of positional argument")
@@ -64,7 +64,12 @@ The argparse module, simplifies command-line argument handling by offering built
 
  - `argparse.ArgumentParser` Creates a new argument parser object.  
  - `add_argument` Defines the arguments the script accepts.
- - `parse_args` Parses the command-line arguments and returns a Namespace object with attributes.  
+ - `parse_args` Parses the command-line arguments and returns a Namespace object with attributes.
+
+### How to Execute the Script
+
+`>> python argparse_output_example.py input.txt -o output.txt` 
+
 
  ### Common arguments used with argparse  
 
