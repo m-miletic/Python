@@ -54,9 +54,11 @@ As it can be seen in the example below short and long options can be used togeth
 ### Check `script_3.py` for implementation (and syntax) example  
 The argparse module, simplifies command-line argument handling by offering built-in support for required and optional arguments, flags, automatic help messages, and type validation.  
 ### example:  
-`>> parser = argparse.ArgumentParser(description="Script description here")`  
-`>> parser.add_argument("positional_arg", help="Description of positional argument")`  
-`>> args = parser.parse_args() `  
+```
+>> parser = argparse.ArgumentParser(description="Script description here")
+>> parser.add_argument("positional_arg", help="Description of positional argument")
+>> args = parser.parse_args()
+```
 
  - `argparse.ArgumentParser` Creates a new argument parser object.  
  - `add_argument` Defines the arguments the script accepts.
