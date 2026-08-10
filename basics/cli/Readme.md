@@ -44,10 +44,29 @@ NOTE: How to distinguish option from an argument!?
 - argument - positional value that isn't attached to an option (for the example below input.txt and result.py are options and there is no arguments).
 #### The script performs the same task whether the value is provided as a positional argument or as an option value. The difference is only in the way the value is passed to the script!
 
-
-
 ### example  
 As it can be seen in the example below short and long options can be used together in the same command
 
 `>> python script.py -f input.txt --output result.txt`
 
+## argparse  
+### Check `script_3.py` for implementation (and syntax) example  
+The argparse module, simplifies command-line argument handling by offering built-in support for required and optional arguments, flags, automatic help messages, and type validation.  
+### example:  
+```
+>> parser = argparse.ArgumentParser(description="Script description here")
+>> parser.add_argument("positional_arg", help="Description of positional argument")
+>> parser.add_argument("-o", "--optional", help="Description of optional argument") 
+>> parser.add_argument("-f", "--flag", action="store_true", help="Boolean flag argument")
+>> args = parser.parse_args()
+```
+
+ - `argparse.ArgumentParser` Creates a new argument parser object.  
+ - `add_argument` Defines the arguments the script accepts.
+ - `parse_args` Parses the command-line arguments and returns a Namespace object with attributes.  
+
+ ### Common arguments used with argparse  
+
+ <img width="660" height="386" alt="argparsePNG" src="https://github.com/user-attachments/assets/a24e6566-b6d4-4968-8c62-4dd876eff1f2" />
+
+ 
