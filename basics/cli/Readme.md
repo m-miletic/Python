@@ -66,7 +66,7 @@ The argparse module, simplifies command-line argument handling by offering built
  - `add_argument` Defines the arguments the script accepts.
  - `parse_args` Parses the command-line arguments and returns a Namespace object with attributes.  
 
- ### Common arfuments used with argparse  
+ ### Common arguments used with argparse  
 
  <img width="660" height="386" alt="argparsePNG" src="https://github.com/user-attachments/assets/a24e6566-b6d4-4968-8c62-4dd876eff1f2" />
 
