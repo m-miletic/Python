@@ -57,8 +57,8 @@ The argparse module, simplifies command-line argument handling by offering built
 ```
 >> parser = argparse.ArgumentParser(description="Script description here")
 >> parser.add_argument("positional_arg", help="Description of positional argument")
-parser.add_argument("-o", "--optional", help="Description of optional argument") 
-parser.add_argument("-f", "--flag", action="store_true", help="Boolean flag argument")
+>> parser.add_argument("-o", "--optional", help="Description of optional argument") 
+>> parser.add_argument("-f", "--flag", action="store_true", help="Boolean flag argument")
 >> args = parser.parse_args()
 ```
 
