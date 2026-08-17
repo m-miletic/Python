@@ -126,20 +126,25 @@ list_parser.add_argument(
     nargs="?",
     choices=["todo", "in-progress", "done"])
 
-args = parser.parse_args()
 
-match args.command:
-    case "add":
-        add_task(args.description)
-    case "list":
-        list_tasks(args.status)
-    case "update":
-        update_task(args.id, args.description)
-    case "delete":
-        delete_task(args.id)
-    case "mark-in-progress":
-        mark_task_status(args.id, Status.IN_PROGRESS.value)
-    case "mark-done":
-        mark_task_status(args.id, Status.DONE.value)
-    case "mark-todo":
-        mark_task_status(args.id, Status.TODO.value)
+def main():
+    args = parser.parse_args()
+
+    match args.command:
+        case "add":
+            add_task(args.description)
+        case "list":
+            list_tasks(args.status)
+        case "update":
+            update_task(args.id, args.description)
+        case "delete":
+            delete_task(args.id)
+        case "mark-in-progress":
+            mark_task_status(args.id, Status.IN_PROGRESS.value)
+        case "mark-done":
+            mark_task_status(args.id, Status.DONE.value)
+        case "mark-todo":
+            mark_task_status(args.id, Status.TODO.value)
+
+if __name__ == "__main__":
+    main()
