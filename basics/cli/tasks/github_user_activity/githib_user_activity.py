@@ -6,6 +6,10 @@ parser = argparse.ArgumentParser(description="Script that can track users github
 parser.add_argument("-un", "--username", help="Users github username.", required=True)
 args = parser.parse_args()
 
-response = requests.get(f"https://api.github.com/users/{args.username}/events")
-print(response.status_code)
-pprint(response.json())
+try:
+    response = requests.get(f"https://api.github.com/usedrs/{args.username}/events", timeout=5)
+    response.raise_for_status()
+    data = response.json()
+    print("Success!", data)
+except requests.exceptions.RequestException as e:
+    print(f"Something went wrong: {e}")
