@@ -10,6 +10,6 @@ try:
     response = requests.get(f"https://api.github.com/usedrs/{args.username}/events", timeout=5)
     response.raise_for_status()
     data = response.json()
-    print("Success!", data)
+    pprint("Success!", data)
 except requests.exceptions.RequestException as e:
     print(f"Something went wrong: {e}")
